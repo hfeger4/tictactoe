@@ -59,27 +59,25 @@
         player += 1
         counter += 1
       }
-      function winner(){
-        box1 = document.getElementById("1");
-        box2 = document.getElementById("2");
-        box3 = document.getElementById("3");
-        box4 = document.getElementById("4");
-        box5 = document.getElementById("5");
-        box6 = document.getElementById("6");
-        box7 = document.getElementById("7");
-        box8 = document.getElementById("8");
-        box9 = document.getElementById("9");
+      box1 = document.getElementById("1");
+      box2 = document.getElementById("2");
+      box3 = document.getElementById("3");
+      box4 = document.getElementById("4");
+      box5 = document.getElementById("5");
+      box6 = document.getElementById("6");
+      box7 = document.getElementById("7");
+      box8 = document.getElementById("8");
+      box9 = document.getElementById("9");
 
-        if(counter === 9){
-          if(box1.innerHTML === 'X'){
-            alert("Player X Wins!")
-          }
-          if(box4.innerHTML === 'X' && box5.innerHTML === 'X' && box6.innerHTML === 'X'){
-            alert("Player X Wins!")
-          }
-          if(box7.innerHTML === 'X' && box8.innerHTML === 'X' && box9.innerHTML === 'X'){
-            alert("Player X Wins!")
-          }
+      if(counter === 9){
+        if(box1.innerHTML === 'X'){
+          alert("Player X Wins!")
+        }
+        if(box4.innerHTML === 'X' && box5.innerHTML === 'X' && box6.innerHTML === 'X'){
+          alert("Player X Wins!")
+        }
+        if(box7.innerHTML === 'X' && box8.innerHTML === 'X' && box9.innerHTML === 'X'){
+          alert("Player X Wins!")
         }
       }
     </script>
