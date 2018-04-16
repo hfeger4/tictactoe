@@ -21,7 +21,7 @@
   <body>
     <h1>Tic Tac Toe</h1>
     <button onclick="clickToPlay()">CLICK HERE TO PLAY</button>
-    <button>CLEAR</button>
+    <button onclick="resetWindow()">CLEAR</button>
     <div class="main">
       <div class="box" id='1' onclick='change(this)'>Empty</div>
       <div class="box" id='2' onclick='change(this)'>Empty</div>
@@ -40,6 +40,9 @@
     <script>
       let player = 0
       let counter = 0
+      function resetWindow(){
+        location.reload();
+      }
       function clickToPlay(){
         document.getElementsByClassName("main")[0].style.visibility = 'visible';
         document.getElementsByClassName("main")[1].style.visibility = 'visible';
